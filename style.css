@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  background-color: #00FFFFFF;
+  background-color: transparent;
   height: 570px;
   width: 300px;
   min-width: 300px;
