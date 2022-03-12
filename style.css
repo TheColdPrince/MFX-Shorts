@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #000;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  background-color: transparent;
+  background-color: #0d0d0d;
   height: 570px;
   width: 300px;
   min-width: 300px;
