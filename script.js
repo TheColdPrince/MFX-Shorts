@@ -94,11 +94,11 @@ const comments = [
 		comment: "F80 M3 > GT3"
 	},
 	{
-		userName: "codewithWes",
+		userName: "Yu Yan",
 		timePosted: "1 min ago",
 		profilePhoto:
 			"https://www.minimaldesksetups.com/wp-content/uploads/2020/09/Featureimage.jpg",
-		comment: "Dream car !!!"
+		comment: "Video requested by @JukaraBreeze for test"
 	}
 ];
 
