@@ -10,7 +10,7 @@ const comments = [
 		timePosted: "3 mins ago",
 		profilePhoto:
 			"https://yeezymafia.com/content/images/2019/08/Kanye-West-adidas-Yeezy-Basketball-Shoe-YZY-BSKTBL.png",
-		comment: "Love the color, whats the color code!"
+		comment: "Love it!"
 	},
 	{
 		userName: "traviScott",
@@ -31,7 +31,7 @@ const comments = [
 		timePosted: "Just now",
 		profilePhoto:
 			"https://media.npr.org/assets/music/sotd/2009/11/50cent-606653ff4067b3c2488559211d4adddf497a103b-s800-c85.jpg",
-		comment: "What wheels are those?"
+		comment: "What are those?"
 	},
 	{
 		userName: "ciciFlores",
@@ -69,11 +69,11 @@ const comments = [
 		comment: "Thats crazy quick."
 	},
 	{
-		userName: "houseOf4382",
+		userName: "squid_game",
 		timePosted: "7hrs ago",
 		profilePhoto:
 			"https://upload.wikimedia.org/wikipedia/commons/9/9c/House_of_Highlights_logo.png",
-		comment: "What model porsche is that"
+		comment: "megaflash shorts is cool!"
 	},
 	{
 		userName: "_1995till",
@@ -98,7 +98,7 @@ const comments = [
 		timePosted: "1 min ago",
 		profilePhoto:
 			"https://www.minimaldesksetups.com/wp-content/uploads/2020/09/Featureimage.jpg",
-		comment: "Video requested by @JukaraBreeze for test"
+		comment: "Video requested by @ronami for test"
 	}
 ];
 
