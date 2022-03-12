@@ -1,0 +1,315 @@
+:root {
+  --primaryBC: #000;
+  --range: #ffffff59;
+  --bar: linear-gradient(
+  	90deg,
+  	rgba(238, 29, 82, 1) 0%,
+  	rgba(255, 255, 255, 1) 34%,
+  	rgba(105, 201, 208, 1) 65%
+  );
+  --primary: #fff;
+  --third: #9f9f9f;
+  --poppins: "Poppins", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  font-family: var(--poppins);
+}
+
+.container {
+  background-color: #00FFFFFF;
+  height: 570px;
+  width: 300px;
+  min-width: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.top {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.label {
+  font-size: 0.8em;
+  color: var(--primary);
+}
+.label-main::after {
+  content: "|";
+  margin: 0 0.5em;
+}
+.label-active {
+  font-weight: 600;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.progress-duration {
+  margin-left: 5px;
+  font-size: 0.7em;
+  color: var(--primary);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.progress-range {
+  height: 3px;
+  margin: 5px;
+  width: calc(100% - 10px);
+  background-color: var(--range);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 100px;
+}
+.progress-range:hover {
+  height: 5px;
+}
+.progress-bar {
+  border-radius: 100px;
+  height: 100%;
+  width: 1%;
+  transition: width 0.3s ease;
+  background: var(--bar);
+}
+
+.progress-range:hover .progress-duration {
+  opacity: 1;
+}
+
+.icons {
+  height: 64px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.icons-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons-item-add {
+  height: 32px;
+  width: 40px;
+  overflow: hidden;
+  background-color: var(--primary);
+  border-radius: 7px;
+  border-right: 4px solid #69c9d0;
+  border-left: 4px solid #ee1d52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  position: absolute;
+  bottom: 80px;
+  right: 5px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.right-icon {
+  margin: 0.5em 0;
+}
+.icon img {
+  height: 18px;
+  width: 18px;
+}
+.icon-label {
+  color: var(--primary);
+  font-size: 0.55em;
+}
+
+.comments-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: -10px;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.comments-head-label {
+  font-size: 0.7em;
+  color: var(--third);
+}
+.comments-head-close {
+  cursor: pointer;
+}
+.comments-container {
+  position: absolute;
+  bottom: 0;
+  height: 75%;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  z-index: 99;
+  width: calc(100% - 20px);
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  transform: translatey(100%);
+  overflow-y: scroll;
+}
+.comments-container::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+.comments-list {
+  display: flex;
+  flex-direction: column;
+}
+.comments-item {
+  padding: 10px 0;
+}
+
+.comments-active {
+  transform: translatey(0%);
+}
+
+#comments-icon {
+  cursor: pointer;
+}
+
+#likes-icon {
+  cursor: pointer;
+}
+
+.comment-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.comment-top-logo {
+  height: 36px;
+  width: 36px;
+  border-radius: 100px;
+  background-color: #000;
+  margin-right: 10px;
+  background-image: url(https://usefulangle.com/img/thumb/javascript.png);
+  background-size: cover;
+}
+.comment-top-details {
+  flex: 1;
+  font-size: 0.75em;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 500;
+  color: var(--primaryBC);
+  font-size: 0.9em;
+}
+.user-time {
+  margin: 0 0 0.75em 0;
+  font-size: 0.75em;
+}
+.user-comment {
+  font-size: 0.9em;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  border: 0;
+  width: 100%;
+  background-color: #0f0f0f8a;
+}
+
+.howto {
+  position: relative;
+  padding: 10px;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+}
+.howto-close {
+  outline: none;
+  width: 93%;
+  padding: 8px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--primary);
+  background-color: var(--primaryBC);
+  right: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  border: 3px solid transparent;
+  transition: all 0.6s ease;
+  font-family: inherit;
+}
+.howto-close:hover {
+  border: 3px solid #333;
+}
+
+.explain {
+  position: absolute;
+  width: calc(100% - 40px);
+  background-color: #000000b8;
+  padding: 10px;
+  border-radius: 6px;
+  bottom: 60px;
+}
+.explain-video {
+  color: #69c9d0 !important;
+}
+.explain-video-bar {
+  height: 4px;
+  border-radius: 100px;
+  width: 100%;
+  background-color: var(--range);
+  margin: 4px 0;
+}
+.explain-video-bar-w {
+  height: 100%;
+  width: 65%;
+  background: var(--bar);
+  border-radius: 100px;
+}
+.explain-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.explain-details {
+  list-style: none;
+}
+.explain-details-head {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #ee1d52;
+}
+.explain-details-desc {
+  color: var(--primary);
+  font-size: 0.8em;
+}
